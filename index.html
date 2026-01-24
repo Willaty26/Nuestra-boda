@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Álex & Giana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --champagne: #F7E7CE;
+            --dusty-blue: #94A7AE;
+            --dark-blue: #5D6D7E;
+            --gold-soft: #D4AF37;
+            --white-floral: #FFFAF0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--champagne);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .invitation-card {
+            background-color: var(--white-floral);
+            max-width: 600px;
+            margin: 20px;
+            padding: 50px;
+            border: 15px solid var(--white-floral);
+            outline: 2px solid var(--dusty-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        /* Adorno floral en las esquinas */
+        .invitation-card::before {
+            content: '✿';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: var(--dusty-blue);
+            font-size: 24px;
+        }
+
+        .invitation-card::after {
+            content: '✿';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: var(--dusty-blue);
+            font-size: 24px;
+        }
+
+        h3.intro {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h1.names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--dusty-blue);
+            margin: 20px 0;
+            font-weight: normal;
+        }
+
+        .guest-section {
+            background-color: rgba(148, 167, 174, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+            border-left: 3px solid var(--dusty-blue);
+            border-right: 3px solid var(--dusty-blue);
+        }
+
+        .guest-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--gold-soft);
+            font-weight: bold;
+        }
+
+        .details {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .date {
+            font-size: 1.8rem;
+            color: var(--dusty-blue);
+            border-top: 1px solid var(--champagne);
+            border-bottom: 1px solid var(--champagne);
+            padding: 10px 0;
+            margin: 20px 0;
+        }
+
+        .reference-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 200px 200px 0 0; /* Estilo arco elegante */
+            margin: 20px 0;
+            border: 5px solid var(--champagne);
+            filter: sepia(20%);
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+        @media (max-width: 480px) {
+            .invitation-card { padding: 25px; }
+            h1.names { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <h3 class="intro">Con la bendición de Dios y nuestras familias</h3>
+        <h1 class="names">Alex Miguel &  Giana</h1>
+        
+        <p>Tenemos el honor de invitarte a celebrar nuestro enlace matrimonial.</p>
+
+        <img src="https://ibb.co/63j8nsf" alt="Alex y Giana" class="reference-img">
+
+        <div class="guest-section">
+            <p>Invitada de Honor:</p>
+            <div class="guest-name">Ade Yoelis Luna Francisco</div>
+            <p style="font-size: 0.9rem; margin-top: 10px;">
+                Hay personas que hacen que la vida sea más brillante, y tú eres una de ellas. 
+                Para nosotros no sería igual celebrar este nuevo capítulo sin tu presencia.
+            </p>
+        </div>
+
+        <div class="details">
+            <div class="date">
+                26 · SEPTIEMBRE · 2026
+            </div>
+            <p><strong>Lugar:</strong> Gary's Restaurant</p>
+            <p><strong>Ciudad:</strong> Lowell</p>
+            <p><strong>Dress Code:</strong> Formal 
+        </div>
+
+        <p class="footer-note">Por favor, confirma tu asistencia antes del 1 de agosto.</p>
+    </div>
+
+</body>
+</html>
